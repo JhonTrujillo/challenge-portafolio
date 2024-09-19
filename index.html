@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="./asset/css/styles.css">
     <title>Portafolio Jhon Trujillo</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="inicio">
         <div class="header__logo">
-            <a href="#">JHON TRUJILLO</a>
+            <a href="#">Jhon Trujillo</a>
         </div>
-        <nav id="header__nav">
-            <ul class="nav__list">
+        <nav class="header__nav">
+            <ul>
                 <li class="nav__item"><a href="#inicio">INICIO</a></li>
                 <li class="nav__item"><a href="#sobremi">SOBRE MI</a></li>
                 <li class="nav__item"><a href="skills">SKILLS</a></li>
@@ -25,27 +27,27 @@
                 <li class="nav__item"><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
-        <!-- <div class="nav-responsive">
-            <i class="fa-solid fa-bars"></i>
-        </div> -->
     </header>
 
     <!-- SECCION INICIO  -->
     <section class="banner">
-        <div class="banner__foto">
-            <div class="contenedor-img">
-                <img src="./asset/img/Foto Fondo Blanco.jpg" alt="foto perfil">
-            </div>
-            <h1>Hola, mi nombre es Jhon Trujillo</h1>
-            <p>Estudiante en formacion Front End con pasión en la creación de experiencias visuales y
-                funcionales, estoy seguro de que puedo aportar un valor significativo a su equipo.</p>
-            <h2>Ingeniero de Sistemas - Frontend</h2>
+        <div class="banner__card">
+            <img src="./asset/img/Foto Fondo Blanco.jpg" alt="foto perfil">
+            <div class="card__info">
+                <h1>Hola, mi nombre es Jhon Trujillo</h1>
+                <p>Estudiante en formacion Front End con pasión en la creación de experiencias visuales y
+                    funcionales, estoy seguro de que puedo aportar un valor significativo a su equipo.</p>
+                <h2>Ingeniero de Sistemas - Frontend</h2>
 
-            <div class="redes">
-                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/jhon-trujillo-59122718a/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/JhonTrujillo"><i class="fa-brands fa-github"></i></a>
+                <div class="card__redes">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/jhon-trujillo-59122718a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/JhonTrujillo"><i class="fa-brands fa-github"></i></a>
+            
             </div>
+       
+        </div>
+        
         </div>
     </section>
 
@@ -109,8 +111,8 @@
 
     <!-- SECCION SKILLS -->
     <section class="skills">
+        <h3>Skills</h3>
         <div class="skills__contenido">
-            <h3>Skills</h3>
             <div class="contenido__item">
                 <i class="fa-brands fa-html5"></i>
                 <span>HTML5</span>
@@ -130,29 +132,74 @@
 
         <!-- SECCION HOBBIES -->
         <section class="hobbies">
+            <h3>Hobbies</h3>
             <div class="hobbies__contenido">
-                <h3>Hobbies</h3>
                 <div class="contenido__item">
-                    <i class="fa-brands fa-html5"></i>
-                    <span>HTML5</span>
+                    <i class="fa-solid fa-music"></i>
+                    <span>Musica</span>
                 </div>
         
                 <div class="contenido__item">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <span>CSS</span>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>Video Juegos</span>
                 </div>
         
                 <div class="contenido__item">
-                    <i class="fa-brands fa-js"></i>
-                    <span>JavaScript</span>
+                    <i class="fa-solid fa-laptop"></i>
+                    <span>Computacion</span>
                 </div>
+
+                <div class="contenido__item">
+                    <i class="fa-solid fa-film"></i>
+                    <span>Peliculas</span>
+                </div>
+
+                <div class="contenido__item">
+                    <i class="fa-brands fa-avianex"></i>
+                    <span>Viajar</span>
+                </div>
+
+               
             </div>
         </section>
 
+  <!-- SECCION FORMACION ACADEMICA -->
+  <section class="hobbies">
+    <h3>Formacion Academica</h3>
+    <div class="hobbies__contenido">
+        <div class="contenido__item">
+            <i class="fa-solid fa-music"></i>
+            <span>Musica</span>
+        </div>
+
+        <div class="contenido__item">
+            <i class="fa-solid fa-gamepad"></i>
+            <span>Video Juegos</span>
+        </div>
+
+        <div class="contenido__item">
+            <i class="fa-solid fa-laptop"></i>
+            <span>Computacion</span>
+        </div>
+
+        <div class="contenido__item">
+            <i class="fa-solid fa-film"></i>
+            <span>Peliculas</span>
+        </div>
+
+        <div class="contenido__item">
+            <i class="fa-brands fa-avianex"></i>
+            <span>Viajar</span>
+        </div>
+
+       
+    </div>
+</section>
+
  <!-- SECCION PORTAFOLIO -->
- <section class="contenedor-portafolio" id="portfolio">
+ <section class="portafolio" id="portfolio">
     <h2>PORTAFOLIO</h2>
-    <div class="contenido-portafolio" id="portafolio">
+    <div class="portafolio__contenido" id="portafolio">
         
     </div>
     
@@ -200,22 +247,22 @@
     </section>
 
     <!-- footer -->
-    <footer>
-        <a href="#inicio" class="arriba">
+    <footer class="footer">
+        <a href="#" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>
-        <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        <div class="footer__redes">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.skype.com/es/"><i class="fa-brands fa-skype"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
+        <p>Desarrollado por Jhon Trujillo @2024</p>
     </footer>
 
 
 </body>
-<script src="./js/proyectos,js"></script>
+<script src="./asset/js/proyectos.js"></script>
 
 
 </body>
