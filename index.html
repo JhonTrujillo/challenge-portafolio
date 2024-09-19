@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio Jhon Trujillo</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#">JHON TRUJILLO</a>
+        </div>
+        <nav id="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#inicio">INICIO</a></li>
+                <li class="nav__item"><a href="#sobremi">SOBRE MI</a></li>
+                <li class="nav__item"><a href="skills">SKILLS</a></li>
+                <li class="nav__item"><a href="hobbies">HOBBIES</a></li>
+                <li class="nav__item"><a href="#formacion">PORTAFOLIO</a></li>
+                <li class="nav__item"><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <!-- <div class="nav-responsive">
+            <i class="fa-solid fa-bars"></i>
+        </div> -->
+    </header>
+
+    <!-- SECCION INICIO  -->
+    <section class="banner">
+        <div class="banner__foto">
+            <div class="contenedor-img">
+                <img src="./asset/img/Foto Fondo Blanco.jpg" alt="foto perfil">
+            </div>
+            <h1>Hola, mi nombre es Jhon Trujillo</h1>
+            <p>Estudiante en formacion Front End con pasión en la creación de experiencias visuales y
+                funcionales, estoy seguro de que puedo aportar un valor significativo a su equipo.</p>
+            <h2>Ingeniero de Sistemas - Frontend</h2>
+
+            <div class="redes">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/jhon-trujillo-59122718a/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/JhonTrujillo"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section class="sobremi">
+        <div class="sobremi__contenido">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Jhon Trujillo.</span>
+                Ingeniero de sistemas de la Universidad del Tolima con
+                Capacidad para trabajar en equipo, excelentes
+                relaciones interpersonales. Alto grado de
+                responsabilidad y fácil interpretación de las políticas
+                organizacionales. Ganas de aprender y fácil adaptación.
+            </p>
+            <div class="sobremi__fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            09-08-1990
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            3144826300
+                        </li>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            09-08-1990
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            jhonhtg90@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Direccion</strong>
+                            Ibagué - Tolima
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador Web - Junior</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button class="sobremi__botondescarga">
+            <a href="./asset/CV Jhon Trujillo.pdf" download="CV_Jhon_Trujillo.pdf">Descargar CV<i
+                    class="fa-solid fa-download"></i></a>
+
+
+            <span class="overlay"></span>
+        </button>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills">
+        <div class="skills__contenido">
+            <h3>Skills</h3>
+            <div class="contenido__item">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML5</span>
+            </div>
+    
+            <div class="contenido__item">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span>CSS</span>
+            </div>
+    
+            <div class="contenido__item">
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript</span>
+            </div>
+        </div>
+    </section>
+
+        <!-- SECCION HOBBIES -->
+        <section class="hobbies">
+            <div class="hobbies__contenido">
+                <h3>Hobbies</h3>
+                <div class="contenido__item">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+        
+                <div class="contenido__item">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>CSS</span>
+                </div>
+        
+                <div class="contenido__item">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </section>
+
+ <!-- SECCION PORTAFOLIO -->
+ <section class="contenedor-portafolio" id="portfolio">
+    <h2>PORTAFOLIO</h2>
+    <div class="contenido-portafolio" id="portafolio">
+        
+    </div>
+    
+</section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                calle Falsa 123 - Urbanizacion Arboleda
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 2384 - 4343443
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: www.example@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+
+</body>
+<script src="./js/proyectos,js"></script>
+
+
+</body>
+
+</html>
