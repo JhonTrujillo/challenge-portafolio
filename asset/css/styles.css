@@ -24,6 +24,14 @@ html{
     left: 0;
     z-index: 99;
 }
+
+.header img{
+    height: 60px;
+    width: 60px;
+    border: 1px solid rgb(90, 87, 87);
+    
+}
+
 .header__logo{
     max-width: 11rem;
     display: flex; 
