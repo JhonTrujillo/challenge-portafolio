@@ -143,6 +143,7 @@ html{
     background-color: #1e2326;
     color: #fff;
     padding: 3rem;
+    
 }
 .sobremi__contenido{
     max-width: 1100px;
@@ -205,6 +206,8 @@ html{
 
 /* boton descarga CV */
 .sobremi__botondescarga{
+    height: 50px;
+    width: 150px;
     cursor: pointer;
     background-color: transparent;
     border: 1px solid #575555; 
@@ -263,6 +266,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -318,11 +322,11 @@ html{
 
 .formacion__card{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
-    
-    
+    width: 80%;
 }
 
 .card__contenido{
@@ -334,7 +338,6 @@ html{
     height: 200px;
     border: 1px solid rgb(95, 93, 93);
     border-radius: 30px;
-    
 }
 
 .card__contenido img{
@@ -348,6 +351,7 @@ html{
     color: #1CB698;
     font-weight: 400;
 }
+
 .card__contenido p{
     padding: 2px 5px;
     font-size: 1.8rem;
@@ -361,9 +365,7 @@ html{
     color: #fff;
 }
 
-
-
-/* SECCCION PORTAFOLIO */
+/* SECCCION PROYECTOS */
 
 .portafolio{
     width: 100%;
@@ -439,24 +441,29 @@ html{
     color: #fff;
     padding: 50px 0;
 }
+
 .contacto__contenido{
     max-width: 1100px;
     margin: auto;
 }
+
 .contacto__contenido h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
+
 .contenido__formulario{
     display: flex;
 }
+
 .contenido__formulario .col{
     width: 50%;
     padding: 10px;
     position: relative;
 }
+
 .contenido__formulario  .col input, 
 .contenido__formulario  .col textarea{
     display: block;
@@ -468,6 +475,7 @@ html{
     color: #fff;
     font-size: 18px;
 }
+
 .contenido__formulario  button{
     cursor: pointer;
     background-color: transparent;
@@ -481,6 +489,7 @@ html{
     position: relative;
     z-index: 10;
 }
+
 .contenido__formulario  .overlay{
     position: absolute;
     top: 0;
@@ -491,35 +500,39 @@ html{
     z-index: -1;
     transition: 1s;
 }
+
 .contenido__formulario :hover .overlay{
     width: 100%;
 }
+
 .contenido__formulario  .col img{
     width: 100%;
 }
+
 .contenido__formulario  .col .info{
     position: absolute;
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
+    /* max-width: 350px; */
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .contenido__formulario  .col .info ul{
     list-style: none;
 }
+
 .contenido__formulario  .col .info ul li{
     margin-bottom: 20px;
     font-size: 2rem;
 }
+
 .contenido__formulario  .col .info ul li i{
     color: #1CB698;
     display: inline-block;
     margin-right: 20px;
 }
-
-
 
 /* FOOTER */
 .footer{
@@ -549,6 +562,7 @@ html{
 .footer .footer__redes{
     margin-bottom: 20px;
 }
+
 .footer__redes a{
     color: #fff;
     display: inline-block;
@@ -568,3 +582,16 @@ html{
 }
 
 
+@media (max-width:762px){
+    .header{
+        justify-content: start;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+    .formulario__col--ocultar{
+        display: none;
+    }
+}
