@@ -299,6 +299,70 @@ html{
     font-size: 1.5rem;
 }
 
+/* SECCION FORMACION */
+.formacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e2326;
+    width: 100%;
+    height: 100%;
+}
+
+.formacion__title{
+    font-size: 5rem;
+    text-align: center;
+    color: #fff;
+    padding: 20px 10px; 
+}
+
+.formacion__card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+    
+}
+
+.card__contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(95, 93, 93);
+    border-radius: 30px;
+    
+}
+
+.card__contenido img{
+    height: 80px;
+    width: 80px;
+}
+
+.card__contenido span{
+    margin-top: 5px;
+    font-size: 2rem;
+    color: #1CB698;
+    font-weight: 400;
+}
+.card__contenido p{
+    padding: 2px 5px;
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: #fff;
+}
+.card__contenido .card__contenido--span{
+    padding: 2px 5px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+
 /* SECCCION PORTAFOLIO */
 
 .portafolio{
