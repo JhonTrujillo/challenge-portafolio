@@ -592,6 +592,31 @@ html{
     font-size: 2.5rem;
 }
 
+@media (max-width: 700px){
+    .banner__card{
+        display: block;
+        margin-top: 40px;
+    }
+    .banner__card img{
+        margin: auto;
+       width: 200px;
+       height: 200px;
+    }
+    .sobremi__fila{
+        display: block;
+    }
+    .sobremi__botondescarga{
+        height: 50px;
+        width: 150px;
+        font-size: 1.3rem;
+        text-align: center;
+        
+    }
+    .sobremi__fila .col{
+        width: 100%;
+    }
+}
+
 
 @media (max-width:762px){
     .header{
@@ -601,8 +626,6 @@ html{
     .header__nav{
         display: none;
     }
-
-    
 }
 
 @media (max-width: 1000px){
@@ -613,3 +636,4 @@ html{
         display: none;
     }
 }
+
