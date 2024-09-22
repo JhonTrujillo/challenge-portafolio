@@ -16,7 +16,7 @@ html{
 .header{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background:#1e2326;
     position: fixed;
     width: 100%;
@@ -25,37 +25,30 @@ html{
     z-index: 99;
 }
 
-.header img{
-    height: 60px;
-    width: 60px;
-    border: 1px solid rgb(90, 87, 87);
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
-.header__logo{
-    max-width: 11rem;
-    display: flex; 
-    justify-content: flex-end; 
-    align-items: center;
-    padding: 15px 20px;
-}
+.nav__logo {
 
-.header__logo a {
-    /* font-family: 'Righteous'; */
-    /* display: flex; */
-    font-size: 3rem;
+ 
+    font-size: 2rem;
     text-align: center;
     color: #1cb698;
-    text-decoration: none; /*quita el subrayado del link*/
-}
+    text-decoration: none; 
+   
+}   
 
-.header__nav ul  {
+.nav__list {
     display: flex;
     list-style: none; 
- 
 }
 
-.header nav ul li a {
+.list__link a {
     text-align: none;
     color: #fff;
     margin: 0 15px;
@@ -65,7 +58,7 @@ html{
     font-size: 1.5rem;
 }
 
-.header nav ul li a:hover{
+.list__link a:hover{
     color: #1cb698;
 }
 
@@ -119,7 +112,7 @@ html{
     font-family: 'Work Sans';
 }
 
-.card__info .card__redes a{
+.card__redes a{
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -133,7 +126,7 @@ html{
     transition: .3s;
 }
 
-.banner__card .card__redes a:hover{
+.card__redes a:hover{
     background-color: #1cb698;
 }
 
@@ -168,36 +161,36 @@ html{
     font-weight: bold;
 }
 
-.sobremi__fila{
+.sobremi__contenido .contenido__info{
     display: flex;
 }
 
-.sobremi__fila .col{
+.contenido__info{
     width: 50%;
 }
 
-.sobremi__fila .col h3{
+.info__col h3{
     font-size: 2.8rem;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
 
-.sobremi__fila .col ul{
+.info__col ul{
     list-style: none;
 }
 
-.sobremi__fila .col ul li{
+.info__col ul li{
     margin: 12px 0;
     font-size: 1.5rem;
 }
 
-.sobremi__fila .col ul li strong{
+.info__col ul li strong{
     display: inline-block;
     color: #1cb698;
     width: 130px;
 }
 
-.sobremi__fila .col ul li span{
+.info__col ul li span{
     background-color: #1cb698;
     padding: 3px;
     font-weight: bold;
@@ -592,40 +585,62 @@ html{
     font-size: 2.5rem;
 }
 
-@media (max-width: 700px){
-    .banner__card{
+ /* @media (max-width: 360px){
+    .nav__list{
+        display: inline-flex;
+    }
+} */
+
+
+
+@media (max-width: 680px) {
+    .banner__card {
         display: block;
         margin-top: 40px;
     }
-    .banner__card img{
+
+    .banner__card img {
         margin: auto;
-       width: 200px;
-       height: 200px;
+        width: 200px;
+        height: 200px;
     }
-    .sobremi__fila{
+
+    .sobremi__fila {
         display: block;
     }
-    .sobremi__botondescarga{
+
+    .sobremi__botondescarga {
         height: 50px;
         width: 150px;
         font-size: 1.3rem;
         text-align: center;
-        
+
     }
-    .sobremi__fila .col{
+
+    .sobremi__fila .col {
         width: 100%;
     }
 }
 
 
-@media (max-width:762px){
+@media (max-width:782px){
     .header{
-        justify-content: start;
+        display: inline-flex;
+        justify-content: flex-end;
     }
 
-    .header__nav{
-        display: none;
+    .list__link {
+        margin: 0;
+        padding: 0;
+         visibility: hidden;
+       
     }
+
+    .list__link--visible{
+        display: flex;
+        visibility: visible;
+        
+    } 
 }
 
 @media (max-width: 1000px){
