@@ -1,3 +1,10 @@
+:root{
+    --color-principal: #1e2326; 
+    --color-secundario: #1cb698;
+    --color-alternativo: #252a2e;   
+    --color-font-principal: #fff;
+}
+
 /* reseteamos los estilos predeterminados del navegador */
 *{
     box-sizing: border-box;
@@ -17,7 +24,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:#1e2326;
+    background: var(--color-principal);
     position: fixed;
     width: 100%;
     top: 0;
@@ -34,11 +41,9 @@ html{
 }
 
 .nav__logo {
-
- 
     font-size: 2rem;
     text-align: center;
-    color: #1cb698;
+    color: var(--color-secundario);
     text-decoration: none; 
    
 }   
@@ -50,7 +55,7 @@ html{
 
 .list__link a {
     text-align: none;
-    color: #fff;
+    color: var(--color-font-principal);
     margin: 0 15px;
     padding: 3px;
     text-decoration: none;
@@ -59,7 +64,7 @@ html{
 }
 
 .list__link a:hover{
-    color: #1cb698;
+    color: var(--color-secundario);
 }
 
 
@@ -69,13 +74,13 @@ html{
     url(/asset/img/fondo.jpg);
     background-size: cover;
     height: 100vh;
-    color: #fff;
+    color: var(--color-font-principal);
     display: flex;
 }
 
 .banner__card{
     padding: 20px;
-    background-color: #1e2326;
+    background: var(--color-principal);
     width: 750px;
     margin: auto;
     text-align: center;
@@ -85,7 +90,7 @@ html{
 
 .banner__card img{
     margin-top: 40px;
-    border: 5px solid #1e2326;
+    border: 5px solid var(--color-principal);
     border-radius: 100%;
     width: 50%;
     margin: auto;
@@ -113,7 +118,7 @@ html{
 }
 
 .card__redes a{
-    color: #fff;
+    color: var(--color-font-principal);
     display: inline-block;
     text-decoration: none;
     border: 1px solid #fff;
@@ -127,14 +132,14 @@ html{
 }
 
 .card__redes a:hover{
-    background-color: #1cb698;
+    background-color: var(--color-secundario);
 }
 
 
 /* SECCION SOBRE MI */
 .sobremi{
-    background-color: #1e2326;
-    color: #fff;
+    background-color: var(--color-principal);
+    color: var(--color-font-principal);
     padding: 3rem;
     
 }
@@ -159,7 +164,7 @@ html{
 }
 
 .sobremi__contenido p span{
-    color: #1cb698;
+    color: var(--color-secundario);
     font-weight: bold;
 }
 
@@ -187,12 +192,12 @@ html{
 
 .info__col ul li strong{
     display: inline-block;
-    color: #1cb698;
+    color: var(--color-secundario);
     width: 130px;
 }
 
 .info__col ul li span{
-    background-color: #1cb698;
+    background-color: var(--color-secundario);
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -210,7 +215,7 @@ html{
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 1.8rem;
-    color: #fff;
+    color: var(--color-font-principal);
     position: relative;
     z-index: 10;
 }
@@ -221,13 +226,13 @@ html{
     left: 0; 
     width: 0;
     height: 100%;
-    background-color: #1cb698;
+    background-color: var(--color-secundario);
     z-index: -1; 
     transition: 1s;
 }
 
 .sobremi__botondescarga a{
-    color: #fff;
+    color: var(--color-font-principal);
     text-decoration: none;
 }
 
@@ -243,7 +248,7 @@ html{
 /* Contenedor Skills */
  .skills, 
  .hobbies{
-    background-color: #1e2326;
+    background-color: var(--color-principal);
 } 
 
 .skills h3,
@@ -252,7 +257,7 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-    color: #fff;
+    color: var(--color-font-principal);
 }
 
 .skills__contenido,
@@ -270,7 +275,7 @@ html{
     flex-direction: column;
     width: 100px;
     height: 100px;
-    background-color:#252a2e;
+    background-color:var(--color-alternativo);
     border-radius: 10px;
     margin: 0 15px 15px 0;
     transition: .3s;
@@ -278,7 +283,7 @@ html{
 
 .skills__contenido .contenido__item:hover,
 .hobbies__contenido .contenido__item:hover{
-    background-color: #1cb698;
+    background-color: var(--color-secundario);
 }
 
 .skills__contenido .contenido__item i,
@@ -287,7 +292,7 @@ html{
     font-size: 4rem;
     margin-bottom: 10px;
     text-align: center;
-    color: #fff;
+    color: var(--color-font-principal);
 }
 .skills__contenido .contenido__item span,
 .hobbies__contenido .contenido__item span
@@ -302,7 +307,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1e2326;
+    background-color: var(--color-principal);
     width: 100%;
     height: 100%;
 }
@@ -310,7 +315,7 @@ html{
 .formacion__title{
     font-size: 5rem;
     text-align: center;
-    color: #fff;
+    color: var(--color-font-principal);
     padding: 20px 10px; 
 }
 
@@ -330,10 +335,13 @@ html{
     align-items: center;
     width: 200px;
     height: 200px;
-    border: 1px solid rgb(95, 93, 93);
+    border: 1px solid var(--color-alternativo);
     border-radius: 30px;
 }
 
+.card__contenido:hover{
+    box-shadow:0 0 5px var(--color-secundario);
+}
 .card__contenido img{
     height: 80px;
     width: 80px;
@@ -342,7 +350,7 @@ html{
 .card__contenido span{
     margin-top: 5px;
     font-size: 2rem;
-    color: #1CB698;
+    color: var(--color-secundario);
     font-weight: 400;
 }
 
@@ -350,13 +358,13 @@ html{
     padding: 2px 5px;
     font-size: 1.8rem;
     font-weight: 200;
-    color: #fff;
+    color: var(--color-font-principal);
 }
 .card__contenido .card__contenido--span{
     padding: 2px 5px;
     font-size: 1.3rem;
     font-weight: 500;
-    color: #fff;
+    color: var(--color-font-principal);
 }
 
 /* SECCCION PROYECTOS */
@@ -364,8 +372,8 @@ html{
 .portafolio{
     width: 100%;
     height: 100%;
-    background-color: #1e2326;
-    color: #fff;
+    background-color: var(--color-principal);
+    color: var(--color-font-principal);
     padding: 50px;
 }
 
@@ -393,7 +401,7 @@ html{
 }
 
 .creartarjeta:hover{
-    box-shadow:0 0 5px rgb(39, 130, 153) ;
+    box-shadow:0 0 5px var(--color-secundario);
 }
 
 .creartarjeta h3{
@@ -419,20 +427,18 @@ html{
 .creartarjeta a{
     text-decoration: none;
     font-size: 2rem;
-    color: #1CB698;
+    color: var(--color-secundario);
     margin-top: 10px;
    
 }  
 
-.contenedor-portafolio .contenido-portafolio .creartarjeta a:hover{
-    color: #fff;
-}
+
 
 /* SECCION CONTACTO */
 .contacto{
     background-image: url(img/contact_bg.png);
-    background-color: #1e2326;
-    color: #fff;
+    background-color: var(--color-principal);
+    color: var(--color-font-principal);
     padding: 50px 0;
     display: flex;
     justify-content: space-around;
@@ -471,8 +477,8 @@ html{
     padding: 18px;
     border: none;
     margin-bottom: 20px;
-    background-color: #252A2E;
-    color: #fff;
+    background-color: var(--color-alternativo);
+    color: var(--color-font-principal);
     font-size: 18px;
 }
 
@@ -485,7 +491,7 @@ html{
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
-    color: #fff;
+    color: var(--color-font-principal);
     position: relative;
     z-index: 10;
 }
@@ -496,7 +502,7 @@ html{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: var(--color-secundario);
     z-index: -1;
     transition: 1s;
 }
@@ -534,15 +540,15 @@ html{
 }
 
 .list__item i{
-    color: #1CB698;
+    color: var(--color-secundario);
     display: inline-block;
     margin-right: 20px;
 }
 
 /* FOOTER */
 .footer{
-    background-color: #252A2E;
-    color: #fff;
+    background-color: var(--color-alternativo);
+    color: var(--color-font-principal);
     padding: 50px 0 30px 0;
     text-align: center;
     position: relative;
@@ -553,8 +559,8 @@ html{
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #1CB698;
-    color: #fff;
+    background-color: var(--color-secundario);
+    color: var(--color-font-principal);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -569,7 +575,7 @@ html{
 }
 
 .footer__redes a{
-    color: #fff;
+    color:var(--color-font-principal);
     display: inline-block;
     text-decoration: none;
     border: 1px solid #fff;
@@ -582,8 +588,11 @@ html{
     transition: .3s;
 }
 
+.footer__redes a:hover{
+    background: var(--color-secundario);
+}
 .footer p{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 @media (max-width: 680px) {
