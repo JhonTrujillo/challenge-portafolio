@@ -141,6 +141,8 @@ html{
 .sobremi__contenido{
     max-width: 1100px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .sobremi__contenido h2{
@@ -161,12 +163,11 @@ html{
     font-weight: bold;
 }
 
-.sobremi__contenido .contenido__info{
-    display: flex;
-}
-
 .contenido__info{
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .info__col h3{
@@ -585,14 +586,6 @@ html{
     font-size: 2.5rem;
 }
 
- /* @media (max-width: 360px){
-    .nav__list{
-        display: inline-flex;
-    }
-} */
-
-
-
 @media (max-width: 680px) {
     .banner__card {
         display: block;
@@ -605,20 +598,17 @@ html{
         height: 200px;
     }
 
-    .sobremi__fila {
+    .contenido__info{
         display: block;
-    }
+    } 
 
     .sobremi__botondescarga {
+        display: block;
         height: 50px;
         width: 150px;
         font-size: 1.3rem;
         text-align: center;
 
-    }
-
-    .sobremi__fila .col {
-        width: 100%;
     }
 }
 
