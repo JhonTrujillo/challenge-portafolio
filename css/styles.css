@@ -436,53 +436,77 @@ html{
 
 /* SECCION CONTACTO */
 .contacto{
-    background-image: url(img/contact_bg.png);
+    /* background-image: url(img/contact_bg.png); */
     background-color: var(--color-principal);
     color: var(--color-font-principal);
     padding: 50px 0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    
+    /* border: 1px solid chocolate; */
 }
 
-.contacto__contenido{
-    width: 80%;
-}
-
-.contenido__title{
-    font-size: 48px;
+.contacto__title{
+    font-size: 4.8rem;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
 
+.contacto__contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+     /* border: 2px solid chartreuse;  */
+}
+
 .contenido__formulario{
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    justify-content: space-around ;
+    align-items: center;
+    width: 80%;
+    /* border: 1px solid red; */
     
 }
 
-.formulario__col{
-    width: 40%;
+.formulario__grupo{
+    width: 90%;
     padding: 10px;
-    position: relative;
+    
 }
 
-.formulario__col input, 
-.formulario__col textarea{
+.formulario__grupo label{
+    font-size: 2rem;
+}
+
+.grupo__input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.grupo__input input, 
+.grupo__input textarea{
     display: block;
     width: 100%;
-    padding: 18px;
+    padding: 5px; 
     border: none;
     margin-bottom: 20px;
     background-color: var(--color-alternativo);
     color: var(--color-font-principal);
-    font-size: 18px;
+    font-size:1.8rem;
 }
 
-.col__button{
+.grupo__input span{
+    font-size: 1rem;
+    display: none; /*oculta emojie*/
+}
+
+.formulario__button{
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -496,7 +520,7 @@ html{
     z-index: 10;
 }
 
-.col__button .overlay{
+.formulario__button .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -507,9 +531,68 @@ html{
     transition: 1s;
 }
 
-.col__button:hover .overlay{
+.formulario__button:hover .overlay{
     width: 100%;
 }
+
+
+/*Parafo que contiene los mensajes de error*/
+.formulario_input_error {
+    width:100%;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    /* border: 1px solid red;  */
+     display: none; 
+    background-color: rgb(218, 39, 39);
+    border-radius: 15px;
+}
+
+.formulario_input_ok{
+    width:100%;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    /* border: 1px solid red;  */
+     display: none; 
+    background-color: rgb(17, 155, 59);
+    border-radius: 15px;
+}
+.block{
+    display: block;
+}
+
+.error_nombres,
+.error_correo,
+.error_asunto,
+.error_observaciones 
+{
+     display: none; 
+     
+}
+
+#icono_error_nombres, 
+#icono_error_correo,
+#icono_error_asunto,
+#icono_error_observaciones
+{
+     display: none; 
+     
+}
+
+#icono_ok_nombres, 
+#icono_ok_correo, 
+#icono_ok_asunto,
+#icono_ok_observaciones{
+    display: none;
+    
+}
+
+
+
+
+
+
 
 
 .formulario__mapa{
